@@ -10,11 +10,11 @@ import C;
 
 // Edit to get rid of dependency upon ANTLR C++ target.
 @parser::preinclude {
-    //#include "CParser.h"
+    #include "CParser.h"
 }
 
 @lexer::members {
-  //bool skipCommentSymbols;
+  bool skipCommentSymbols;
 }
 
 id
